@@ -20,6 +20,12 @@ class Strictly_Increasing:
                 while end < n and A[end] > A[point_A]:
                     point_A += 1
                     end += 1
+                    
+                #Uncomment if you want to modify the values of the list to making it increasing order
+                # for modification in range(start,end):
+                #     A[modification] = A[modification] + increment
+                
+                #Comment if you are modifying the values of the list to making it increasing order
                 #We just need to modify the las value to keep searching in the next iteration!
                 A[end-1] = A[end-1] + increment
                 #We increment the total amount of moves needed
